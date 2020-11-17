@@ -1,24 +1,30 @@
-// from data.js
-var tableData = data;
+// create a variable that references the data
+var ufoData = data;
 
 // view data
-console.log(tableData);
+console.log(ufoData);
 
 // get a reference to table body tag
 var tbody = d3.select("tbody");
 
 // build table(row,data,)
-// add tr
-tableData.forEach((ufo) => {
-    var row = tbody.append("tr");
-    // only using value not key
-    Object.entries(ufo).forEach(([key, value]) => {
-        // add td
-        var cell = row.append("td");
-        //   add values
-        cell.text(value);
+function buildTable(tableData) {
+    // clear current table data
+    tbody.html("");
+
+    // append a tr
+    tableData.forEach((tableRow) => {
+        var row = tbody.append("tr");
+        // 
+        Object.values(tableRow).forEach((value) => {
+            // add td
+            var cell = row.append("td");
+            //   add values
+            cell.text(value);
+
+        });
     });
-});
+}
 
 // select the button
 var button = d3.select("#filter-btn");
@@ -64,3 +70,6 @@ function runEnter() {
         });
     });
 }
+
+// build table with ufoData
+buildTable(ufoData);
