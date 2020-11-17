@@ -25,7 +25,27 @@ function buildTable(tableData) {
         });
     });
 }
+// grab filters
+var filters = {};
+// function needed for updated filters
+function updatedfilters() {
+    // event listeners:element, value, id
+    var changedElement = d3.select(this).select("input");
+    var elementValue = changedElement.property("value");
+    var filterId = changedElement.attr("id");
 
+    // event listener - add id and value when filter value is entered otherwise delete filter
+    if (elementValue {
+        filters[filterID] = elementValue;
+    }
+    else {
+        delete filters[filtersId];
+    }
+    // apply filter and build table again
+    filterTable();
+}
+
+// #########################################################################
 // select the button
 var button = d3.select("#filter-btn");
 
