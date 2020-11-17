@@ -44,7 +44,18 @@ function updatedfilters() {
     // apply filter and build table again
     filterTable();
 }
-
+// create filterTable function
+function filterTable() {
+    // make filteredData ufoData (like python)
+    var filteredData = ufoData;
+    // interate through filters, keeping ufodata that matches filter values
+    Object.entries(filters).forEach(([key, value]) => {
+        filteredData.filter(row => row[key] === value);
+    });
+    // rebuild table using buildTable function using filtered data
+    buildTable(filteredData);
+}
+// 
 // #########################################################################
 // select the button
 var button = d3.select("#filter-btn");
