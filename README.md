@@ -1,5 +1,5 @@
 # JavaScript Homework - JavaScript and DOM Manipulation
-
+![Colorful Astronaut](Colorful Astronaut.png)
 ## Background
 
 The company`ALIENS-R-REAL` needs you to write code that will create a table dynamically based upon a [dataset we provide](StarterCode/static/js/data.js). Their data collection of UFO sightings is too large to search through manually. You also need to allow their users to filter the table data for specific values. There's a catch though... they only use pure JavaScript, HTML, and CSS, and D3.js on their web pages. 
@@ -20,7 +20,7 @@ The company`ALIENS-R-REAL` needs you to write code that will create a table dyna
 5. Push the above changes to GitHub or GitLab.
 
 6. Ensure each repository has regular commits (i.e. 10+ commits) and a thorough README.md file
-
+![Blue Alien Galaxy](Blue Alien Galaxy.png)
 ### Level 1: Automatic Table and Date Search (Required)
 
 * Create a basic HTML web page or use the [index.html](StarterCode/index.html) file provided (we recommend building your own custom page!).
@@ -30,6 +30,7 @@ The company`ALIENS-R-REAL` needs you to write code that will create a table dyna
   * Make sure you have a column for `date/time`, `city`, `state`, `country`, `shape`, and `comment` at the very least.
 
 * Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
+
 
 ### Level 2: Multiple Search Categories (**Add this to an existing repository called javascript-challenge-level-2 created in step 1 above.)
 
