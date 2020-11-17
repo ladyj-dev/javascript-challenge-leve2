@@ -1,5 +1,5 @@
 # JavaScript Homework - JavaScript and DOM Manipulation
-![Colorful Astronaut.png](Colorful Astronaut.png)
+![Colorful_Astronaut.png](/images/Colorful_Astronaut.png)
 ## Background
 
 The company`ALIENS-R-REAL` needs you to write code that will create a table dynamically based upon a [dataset we provide](StarterCode/static/js/data.js). Their data collection of UFO sightings is too large to search through manually. You also need to allow their users to filter the table data for specific values. There's a catch though... they only use pure JavaScript, HTML, and CSS, and D3.js on their web pages. 
@@ -20,7 +20,7 @@ The company`ALIENS-R-REAL` needs you to write code that will create a table dyna
 5. Push the above changes to GitHub or GitLab.
 
 6. Ensure each repository has regular commits (i.e. 10+ commits) and a thorough README.md file
-![Blue Alien Galaxy.png](Blue Alien Galaxy.png)
+![Blue Alien Galaxy.png](/images/Blue_Alien_Galaxy.png)
 ### Level 1: Automatic Table and Date Search (Required)
 
 * Create a basic HTML web page or use the [index.html](StarterCode/index.html) file provided (we recommend building your own custom page!).
