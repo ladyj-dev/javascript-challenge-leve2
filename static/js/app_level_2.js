@@ -34,13 +34,17 @@ function updatedfilters() {
     var elementValue = changedElement.property("value");
     var filterId = changedElement.attr("id");
 
+    console.log(filterId);
+
     // event listener - add id and value when filter value is entered otherwise delete filter
     if (elementValue) {
-        filters[filterID] = elementValue;
+        filters[filterId] = elementValue;
     }
         else {
-        delete filters[filtersId];
+        delete filters[filterId];
     }
+    console.log(elementValue);
+
     // apply filter and build table again
     filterTable();
 }
@@ -50,7 +54,7 @@ function filterTable() {
     var filteredData = ufoData;
     // interate through filters, keeping ufodata that matches filter values
     Object.entries(filters).forEach(([key, value]) => {
-        filteredData.filter(row => row[key] === value);
+       filteredData = filteredData.filter(row => row[key] === value);
     });
     // rebuild table using buildTable function using filtered data
     buildTable(filteredData);
